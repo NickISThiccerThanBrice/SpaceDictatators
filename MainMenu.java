@@ -22,9 +22,8 @@ public class MainMenu
 	private JLabel lblSpaceDictators = new JLabel("Space Dictators");
 	private JButton btnIntro = new JButton("Intro");
 	private JButton btnBegin = new JButton("Begin");
-	private JTextPane txtpnIntro = new JTextPane();
 	private final Action action_2 = new BackAction();
-	private JButton btnBack = new JButton("Back");
+	
 	/**
 	 * Launch the application.
 	 */
@@ -88,17 +87,9 @@ public class MainMenu
 		lblSpaceDictators.setBounds(647, 37, 626, 121);
 		frame.getContentPane().add(lblSpaceDictators);
 		
-		//JTextPane txtpnIntro = new JTextPane();
-		txtpnIntro.setText("Intro");
-		txtpnIntro.setBounds(851, 292, 218, 16);
-		frame.getContentPane().add(txtpnIntro);
-		txtpnIntro.setVisible(false);
 		
-		//JButton btnNewButton = new JButton("Back");
-		btnBack.setAction(action_2);
-		btnBack.setBounds(900, 230, 117, 29);
-		frame.getContentPane().add(btnBack);
-		btnBack.setVisible(false);
+		
+		
 	}
 	private class BeginAction extends AbstractAction 
 	{
