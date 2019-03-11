@@ -1,6 +1,7 @@
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
+//import java.awt.EventQueue;
+import java.awt.*;
+import java.swing*;
+/*import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
@@ -13,7 +14,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JTextPane;
 import javax.swing.JScrollPane;
 import java.awt.Button;
-
+*/
 public class MainMenu 
 {
 
