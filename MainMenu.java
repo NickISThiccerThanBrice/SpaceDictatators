@@ -22,7 +22,7 @@ public class MainMenu
 	private JLabel lblSpaceDictators = new JLabel("Space Dictators");
 	private JButton btnIntro = new JButton("Intro");
 	private JButton btnBegin = new JButton("Begin");
-	private final Action action_2 = new BackAction();
+	
 	
 	/**
 	 * Launch the application.
