@@ -109,9 +109,7 @@ public class MainMenu
 		}
 		public void actionPerformed(ActionEvent e) 
 		{
-			lblSpaceDictators.setVisible(false);
-			btnIntro.setVisible(false);
-			btnBegin.setVisible(false);
+			//Play Frame
 		}
 	}
 	private class IntroAction extends AbstractAction 
@@ -123,26 +121,9 @@ public class MainMenu
 		}	
 		public void actionPerformed(ActionEvent e) 
 		{
-			txtpnIntro.setVisible(true);
-			System.out.println("Intro button preformed");
-			btnIntro.setVisible(false);
-			btnBegin.setVisible(false);
-			btnBack.setVisible(true);
+			//Inro Frame
 		}
-	}
-	private class BackAction extends AbstractAction 
-	{
-		public BackAction() 
-		{
-			putValue(NAME, "Back");
-			putValue(SHORT_DESCRIPTION, "Go back to the main screen");
-		}
-		public void actionPerformed(ActionEvent e) 
-		{
-			txtpnIntro.setVisible(false);
-			btnIntro.setVisible(true);
-			btnBegin.setVisible(true);
-			btnBack.setVisible(false);
-		}
+	
+	
 	}
 }
