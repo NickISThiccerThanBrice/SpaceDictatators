@@ -1,0 +1,8 @@
+import java.util.Random;
+
+//Generates a random number from 0 to 10
+	private void RandomNumGen() {
+		Random rand = new Random();
+		int rand_int1 = rand.nextInt(11);
+		
+	}
