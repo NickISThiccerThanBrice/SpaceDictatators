@@ -1,14 +1,21 @@
 import java.util.Random;
 
+//Values of each ship
 public static final int SHIP_VALUE = 8;
 public static final int TROOP_VALUE = 2;
 public static final int LAND_VEHICLE_VALUE = 4
 public static final int PLANETS = 5
 
+//battleScore is used to determine if you win the battle or not 
+//battleScore = (ships*SHIP_VALUE)+(troops*TROOP_VALUE)+(land vehicles*LAND_VEHICLE_VALUE)
 public int battleScore;
+
+//instance variables for how many ships the player has
 public int ships;
 public int troops;
 public int landVehicles;
+
+//instance variable for how many planets the player has captured
 public int planetsCaptured;
 
 //Generates a random number from 0 to 10
