@@ -1,5 +1,16 @@
 import java.util.Random;
 
+public static final int SHIP_VALUE = 8;
+public static final int TROOP_VALUE = 2;
+public static final int LAND_VEHICLE_VALUE = 4
+public static final int PLANETS = 5
+
+public int battleScore;
+public int ships;
+public int troops;
+public int landVehicles;
+public int planetsCaptured;
+
 //Generates a random number from 0 to 10
 	private void RandomNumGen() {
 		Random rand = new Random();
