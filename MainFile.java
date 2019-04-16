@@ -23,6 +23,10 @@ public class MainFile extends JFrame implements ActionListener
         Back.addActionListener(this);
         Back2.addActionListener(this);
         
+        JLabel backGround = new JLabel("New label");
+        backGround.setBackground(Color.darkGray);
+        backGround.setIcon(new ImageIcon("/Volumes/ANDREW2/The_Rule_Of_Space/Galaxy_backround.png"));     
+        
         JPanel Menu = new JPanel();
         Menu.setBackground(Color.darkGray);
         Menu.setLayout(null);
@@ -33,6 +37,8 @@ public class MainFile extends JFrame implements ActionListener
         Menu.add(Title);
         Title.setFont(new Font("Lucia Grande", Font.PLAIN,80));
         Title.setBounds(647, 37, 800, 121);
+        Menu.add(backGround);
+        backGround.setBounds(0, 6, 1920, 1080);  
         
         JPanel Introduction = new JPanel();
         Introduction.setLayout(null);
