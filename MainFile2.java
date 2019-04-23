@@ -9,8 +9,8 @@ import javax.swing.border.Border;
 
 public class MainFile2
 {
-    JPanel cards;
-    JButton Intro, Begin, Back, Back2, Planet6, DontAttack, Attack;
+    JPanel cards, TheOutcome;
+    JButton Intro, Begin, Back, Back2, Planet6, DontAttack, Attack, Close, Close2;
     JLabel Title;
     JPanel YesNo;
     int[] Troops1 = new int[12];
@@ -23,7 +23,10 @@ public class MainFile2
         JFrame MainFile2 = new JFrame();
         
         JFrame YesNo = new JFrame();
-        YesNo.setSize(500, 300);       
+        YesNo.setSize(500, 300);
+        
+        JFrame OutcomeWindow = new JFrame();
+        OutcomeWindow.setSize(1920, 1080);
         
         MainFile2.setSize(1920, 1080);
         MainFile2.setResizable(true);
@@ -36,6 +39,8 @@ public class MainFile2
         Title = new JLabel("The Rule Of Space");
         Attack = new JButton("ATTACK!");
         DontAttack = new JButton("Don't Attack");
+        Close = new JButton("Close");
+        Close2 = new JButton("Close");
         
         Color Purple = new Color(89, 21, 191);
         Color Neon = new Color(170, 255, 2);
@@ -80,21 +85,58 @@ public class MainFile2
             public void actionPerformed(ActionEvent e)
             {
                  boolean Outcome = Bttle(6);
+                 YesNo.setVisible(false);
                  if (Outcome == true)
                  {
+                     OutcomeWindow.setVisible(true);
+                     CardLayout cardLayout = (CardLayout) TheOutcome.getLayout();
+                     cardLayout.show(TheOutcome, "Win");
                  }
                  else
                  {
+                     OutcomeWindow.setVisible(true);
+                     CardLayout cardLayout = (CardLayout) TheOutcome.getLayout();
+                     cardLayout.show(TheOutcome, "Lose");
                  }
             }
         });
+        
+        Close.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                 OutcomeWindow.setVisible(false);
+            }
+        });
+
+        Close2.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                 OutcomeWindow.setVisible(false);
+            }
+        });
+        
+        JPanel Win = new JPanel();
+        Win.setBackground(Sand);
+        Win.setLayout(null);
+        Win.add(Close2);
+        Close2.setBounds(50, 750, 362, 91);
+        
+        JPanel Lose = new JPanel();
+        Lose.setBackground(Color.red);
+        Lose.setLayout(null);
+        Lose.add(Close);
+        Close.setBounds(50, 750, 362, 91);
         
         JPanel Selection = new JPanel();
         Selection.setBackground(Purple);
         Selection.setLayout(null);
         Selection.add(Attack);
+        Attack.setOpaque(true);
         Attack.setBounds(160,50,200,75);
         Selection.add(DontAttack);
+        DontAttack.setOpaque(true);
         DontAttack.setBounds(160,150,200,75);
         
         JPanel Menu = new JPanel();
@@ -145,10 +187,18 @@ public class MainFile2
         cards.add(Introduction, "Introduction");
         cards.add(Game, "Game");
         
+        TheOutcome = new JPanel(new CardLayout());
+        
+        TheOutcome.add(Lose, "Lose");
+        TheOutcome.add(Win, "Win");
+        
         MainFile2.getContentPane().add(cards);
         YesNo.getContentPane().add(Selection);
+        OutcomeWindow.getContentPane().add(TheOutcome);
+        
         MainFile2.setVisible(true);
         YesNo.setVisible(false);
+        OutcomeWindow.setVisible(false);
         
         Intro.addActionListener(new ActionListener()
         {
@@ -189,7 +239,7 @@ public class MainFile2
     }
     public boolean Bttle(int Planet)
     {
-        boolean Outcome = false;
+        boolean Outcome = true;
         int troops = Troops(Planet);
         int groundvehicles = GroundVehicles(Planet);
         int AirVehicles = AirVehicles(Planet);
@@ -213,6 +263,5 @@ public class MainFile2
         AirVehicles1[6] = 20;
         int airvehicles = AirVehicles1[Planet];
         return airvehicles;
-    }
-    
+    }  
 }
