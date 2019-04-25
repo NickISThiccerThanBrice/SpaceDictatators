@@ -165,149 +165,144 @@ public class TheRuleOfSpaceWindows
         Selection.add(Attack);  //adds attack button         
         Attack.setBounds(225,60,200,75);    //Sets boundds and position
         Selection.add(DontAttack);  //adds dont attack button
-        DontAttack.setBounds(225,150,200,75);
+        DontAttack.setBounds(225,150,200,75);   //Sets bounds and position
         
-        JPanel Menu = new JPanel();
-        Menu.setBackground(Color.darkGray);
+        JPanel Menu = new JPanel(); //Declares panel
         Menu.setLayout(null);
-        Menu.add(Begin);
-        Begin.setBackground(Color.gray);
+        Menu.add(Begin);    // adds Button to JPanel
+        Begin.setBackground(Color.gray);    //sets color
         Begin.setOpaque(true);
-        Begin.setBorder(BorderFactory.createBevelBorder(0, Color.white, Neon));
-        Begin.setBounds(779, 216, 362, 56);
-        Begin.setForeground(Neon);
-        Menu.add(Intro);
-        Intro.setBackground(Color.gray);
+        Begin.setBorder(BorderFactory.createBevelBorder(0, Color.white, Neon)); //Creates a border around button
+        Begin.setBounds(779, 216, 362, 56); //sets bounds of button
+        Begin.setForeground(Neon);  //sets color
+        Menu.add(Intro);    //adds button to JPanel
+        Intro.setBackground(Color.gray);    //sets color
         Intro.setOpaque(true);
-        Intro.setBorder(BorderFactory.createBevelBorder(0, Color.white, Neon));
-        Intro.setBounds(779, 335, 362, 91);
-        Intro.setForeground(Neon);
-        Menu.add(Title);
-        Title.setFont(new Font("Desdemona", Font.BOLD,150));
-        Title.setForeground(Neon);
-        Title.setBounds(425, 37, 1500, 121);
-        Menu.add(MainbackGround);
-        MainbackGround.setBounds(0, 0, 1920, 1080);  
+        Intro.setBorder(BorderFactory.createBevelBorder(0, Color.white, Neon)); //Creates a border around button
+        Intro.setBounds(779, 335, 362, 91); //sets bounds of button
+        Intro.setForeground(Neon);  //sets color
+        Menu.add(Title);    //adds JLabel to Jpanel
+        Title.setFont(new Font("Desdemona", Font.BOLD,150));    //Sets font and font size
+        Title.setForeground(Neon);  //sets color
+        Title.setBounds(425, 37, 1500, 121);    //sets bounds and position
+        Menu.add(MainbackGround);   // adds JLabel background to Jpanel
+        MainbackGround.setBounds(0, 0, 1920, 1080);  //sets bounds of background
         
-        JPanel Introduction = new JPanel();
+        JPanel Introduction = new JPanel(); //Declares panel
         Introduction.setLayout(null);
-        Introduction.add(IntroText);
-        IntroText.setFont(new Font("TimesRoman", Font.BOLD,25));
-        IntroText.setForeground(Neon);
-        IntroText.setBounds(800,100,362,91);
-        Introduction.add(Back2);
-        Back2.setBackground(Sand);
+        Introduction.add(IntroText); //Adds Jlabel to Jpanel
+        IntroText.setFont(new Font("TimesRoman", Font.BOLD,25));    //Sets font and font size
+        IntroText.setForeground(Neon);  //sets color
+        IntroText.setBounds(800,100,362,91);    //sets bounds and position
+        Introduction.add(Back2);    // adds Button to JPanel
+        Back2.setBackground(Sand);  //sets color
         Back2.setOpaque(true);
-        Back2.setBorder(BorderFactory.createBevelBorder(0, Color.white, Color.black));
-        Back2.setForeground(Color.black);
-        Back2.setBounds(50, 750, 362, 91);
-        Introduction.add(IntrobackGround);
-        IntrobackGround.setBounds(0, 0, 1920, 1080);
+        Back2.setBorder(BorderFactory.createBevelBorder(0, Color.white, Color.black));  //Creates a border around button
+        Back2.setForeground(Color.black);   //sets color
+        Back2.setBounds(50, 750, 362, 91);  //sets bounds and position
+        Introduction.add(IntrobackGround);   //Adds Jlabel to Jpanel
+        IntrobackGround.setBounds(0, 0, 1920, 1080);    //sets bounds and position of Background
         
-        JPanel Game = new JPanel();
+        JPanel Game = new JPanel(); //Declares panel
         Game.setLayout(null);
-        Game.add(MoneyCounter);
-        MoneyCounter.setFont(new Font("TimesRoman", Font.BOLD,25));
-        MoneyCounter.setForeground(Neon);
-        MoneyCounter.setBounds(1625,5,362,91);
-        Game.add(Back);
-        Back.setBounds(50, 750, 362, 91);
-        Back.setBackground(GunMetal);
-        Back.setForeground(Color.blue);
-        Game.add(StoreButton);
-        StoreButton.setBounds(50, 50, 362, 91);
-        StoreButton.setBackground(GunMetal);
-        StoreButton.setForeground(Color.blue);
-        Game.add(GamebackGround);
-        GamebackGround.setBounds(0, 0, 1920, 1080);
-        GamebackGround.add(Planet6);
-        Planet6.setBounds(1000, 500, 150, 150);
-        GamebackGround.add(Planet1);
-        Planet1.setBounds(500, 500, 200, 150);
-        GamebackGround.add(Planet2);
-        Planet2.setBounds(500, 750, 175, 175);
-        GamebackGround.add(Planet3);
-        Planet3.setBounds(1250, 200, 150, 150);
-        GamebackGround.add(Planet4);
-        Planet4.setBounds(750, 100, 150, 150);
-        GamebackGround.add(Planet5);
-        Planet5.setBounds(1400, 800, 175, 175);
-        GamebackGround.add(Planet6);
-        Planet6.setBounds(1000, 500, 150, 150);
+        Game.add(MoneyCounter);  //Adds Jlabel to Jpanel
+        MoneyCounter.setFont(new Font("TimesRoman", Font.BOLD,25)); //Sets font and font size
+        MoneyCounter.setForeground(Neon);   //sets color
+        MoneyCounter.setBounds(1625,5,362,91);  //sets bounds and position
+        Game.add(Back); // adds Button to JPanel
+        Back.setBounds(50, 750, 362, 91);   //sets bounds and position
+        Back.setBackground(GunMetal);   //sets color
+        Back.setForeground(Color.blue); //sets color
+        Game.add(StoreButton);  // adds Button to JPanel
+        StoreButton.setBounds(50, 50, 362, 91); //sets bounds and position
+        StoreButton.setBackground(GunMetal);    //sets color
+        StoreButton.setForeground(Color.blue);  //sets color
+        Game.add(GamebackGround);    //Adds Jlabel to Jpanel
+        GamebackGround.setBounds(0, 0, 1920, 1080); //sets bounds and position of Game back ground
+        GamebackGround.add(Planet1);    // adds Button to JPanel
+        Planet1.setBounds(500, 500, 200, 150);  //sets bounds and position of planet 1
+        GamebackGround.add(Planet2);    // adds Button to JPanel
+        Planet2.setBounds(500, 750, 175, 175);  //sets bounds and position of planet 2
+        GamebackGround.add(Planet3);    // adds Button to JPanel
+        Planet3.setBounds(1250, 200, 150, 150); //sets bounds and position of Planet3
+        GamebackGround.add(Planet4);    // adds Button to JPanel
+        Planet4.setBounds(750, 100, 150, 150);  //sets bounds and position of Planet 4
+        GamebackGround.add(Planet5);    // adds Button to JPanel
+        Planet5.setBounds(1400, 800, 175, 175); //sets bounds and position of planet 5
+        GamebackGround.add(Planet6);    // adds Button to JPanel
+        Planet6.setBounds(1000, 500, 150, 150); //sets bounds and position of planet 6
         
-        JPanel Store = new JPanel();
+        JPanel Store = new JPanel();    //Declares panel
         Store.setLayout(null);
-        Store.add(StoreBackGround);
+        Store.add(StoreBackGround);  //Adds Jlabel to Jpanel
         StoreBackGround.setBounds(0,0,1920,1080);
-        StoreBackGround.add(MoneyCounter2);
-        MoneyCounter2.setFont(new Font("TimesRoman", Font.BOLD,25));
-        MoneyCounter2.setForeground(Neon);
-        MoneyCounter2.setBounds(1625,5,362,91);
-        StoreBackGround.add(TroopsCounter);
-        TroopsCounter.setFont(new Font("TimesRoman", Font.BOLD,50));
-        TroopsCounter.setForeground(Neon);
-        TroopsCounter.setBounds(220,50,362,91);
-        StoreBackGround.add(GroundVehiclesCounter);
-        GroundVehiclesCounter.setFont(new Font("TimesRoman", Font.BOLD,50));
-        GroundVehiclesCounter.setForeground(Neon);
-        GroundVehiclesCounter.setBounds(700,50,500,91);
-        StoreBackGround.add(AirVehiclesCounter);
-        AirVehiclesCounter.setFont(new Font("TimesRoman", Font.BOLD,50));
-        AirVehiclesCounter.setForeground(Neon);
-        AirVehiclesCounter.setBounds(1350,50,362,91);
-        StoreBackGround.add(CloseStore);
-        CloseStore.setBounds(50, 750, 362, 91);
-        CloseStore.setBackground(GunMetal);
-        CloseStore.setForeground(Neon);
-        StoreBackGround.add(BuyTroops);
-        BuyTroops.setBounds(150, 300, 362, 91);
-        BuyTroops.setBackground(GunMetal);
-        BuyTroops.setForeground(Neon);
-        StoreBackGround.add(BuyGroundVehicles);
-        BuyGroundVehicles.setBounds(750, 300, 362, 91);
-        BuyGroundVehicles.setBackground(GunMetal);
-        BuyGroundVehicles.setForeground(Neon);
-        StoreBackGround.add(BuyAirVehicles);
-        BuyAirVehicles.setBounds(1350, 300, 362, 91);
-        BuyAirVehicles.setBackground(GunMetal);
-        BuyAirVehicles.setForeground(Neon);
-        /**Store.add(StoreBackGround);
-        StoreBackGround.setBounds(0,0,1920,1080);**/
+        StoreBackGround.add(MoneyCounter2);  //Adds Jlabel to Jpanel
+        MoneyCounter2.setFont(new Font("TimesRoman", Font.BOLD,25));    //Sets font and font size
+        MoneyCounter2.setForeground(Neon);  //sets color
+        MoneyCounter2.setBounds(1625,5,362,91); //sets bounds and position
+        StoreBackGround.add(TroopsCounter);  //Adds Jlabel to Jpanel
+        TroopsCounter.setFont(new Font("TimesRoman", Font.BOLD,50));    //Sets font and font size
+        TroopsCounter.setForeground(Neon);  //sets color
+        TroopsCounter.setBounds(220,50,362,91); //sets bounds and position
+        StoreBackGround.add(GroundVehiclesCounter);  //Adds Jlabel to Jpanel
+        GroundVehiclesCounter.setFont(new Font("TimesRoman", Font.BOLD,50));    //Sets font and font size
+        GroundVehiclesCounter.setForeground(Neon);  //sets color
+        GroundVehiclesCounter.setBounds(700,50,500,91); //sets bounds and position
+        StoreBackGround.add(AirVehiclesCounter);     //Adds Jlabel to Jpanel
+        AirVehiclesCounter.setFont(new Font("TimesRoman", Font.BOLD,50));   //Sets font and font size
+        AirVehiclesCounter.setForeground(Neon); //sets color
+        AirVehiclesCounter.setBounds(1350,50,362,91);   //sets bounds and position
+        StoreBackGround.add(CloseStore);    // adds Button to JPanel
+        CloseStore.setBounds(50, 750, 362, 91); //sets bounds and position
+        CloseStore.setBackground(GunMetal); //sets color
+        CloseStore.setForeground(Neon); //sets color
+        StoreBackGround.add(BuyTroops); // adds Button to JPanel
+        BuyTroops.setBounds(150, 300, 362, 91); //sets bounds and position
+        BuyTroops.setBackground(GunMetal);  //sets color
+        BuyTroops.setForeground(Neon);  //sets color
+        StoreBackGround.add(BuyGroundVehicles); // adds Button to JPanel
+        BuyGroundVehicles.setBounds(750, 300, 362, 91); //sets bounds and position
+        BuyGroundVehicles.setBackground(GunMetal);  //sets color
+        BuyGroundVehicles.setForeground(Neon);  //sets color
+        StoreBackGround.add(BuyAirVehicles);    // adds Button to JPanel
+        BuyAirVehicles.setBounds(1350, 300, 362, 91);   //sets bounds and position
+        BuyAirVehicles.setBackground(GunMetal); //sets color
+        BuyAirVehicles.setForeground(Neon); //sets color
         
-        JPanel NoMoney = new JPanel();
+        JPanel NoMoney = new JPanel();  //Declares panel
         NoMoney.setLayout(null);
-        NoMoney.setBackground(GunMetal);
-        NoMoney.add(Close3);
-        Close3.setBounds(50,150,200,75);
-        Close3.setForeground(Color.red);
+        NoMoney.setBackground(GunMetal);    //sets color
+        NoMoney.add(Close3);    // adds Button to JPanel
+        Close3.setBounds(50,150,200,75);    //sets bounds and position
+        Close3.setForeground(Color.red);    //sets color
         Close3.setBorder(BorderFactory.createBevelBorder(0, Color.red, Color.red));
-        NoMoney.add(CannotAfford);
-        CannotAfford.setFont(new Font("TimesRoman", Font.BOLD,25));
-        CannotAfford.setBounds(150,2,400,200);
-        CannotAfford.setForeground(Color.red);
+        NoMoney.add(CannotAfford);   //Adds Jlabel to Jpanel
+        CannotAfford.setFont(new Font("TimesRoman", Font.BOLD,25)); //Sets font and font size
+        CannotAfford.setBounds(150,2,400,200);  //sets bounds and position
+        CannotAfford.setForeground(Color.red);  //sets color
 
         
-        cards = new JPanel(new CardLayout());
+        cards = new JPanel(new CardLayout());   //creates new card layout
         
-        cards.add(Menu, "Menu");
-        cards.add(Introduction, "Introduction");
-        cards.add(Game, "Game");
-        cards.add(Store, "Store");
+        cards.add(Menu, "Menu");    //adds Jpanel to card layout
+        cards.add(Introduction, "Introduction");     //adds Jpanel to card layout
+        cards.add(Game, "Game");     //adds Jpanel to card layout
+        cards.add(Store, "Store");   //adds Jpanel to card layout
+            
+        TheOutcome = new JPanel(new CardLayout());  //creates new card layout
         
-        TheOutcome = new JPanel(new CardLayout());
-        
-        TheOutcome.add(Lose, "Lose");
-        TheOutcome.add(Win, "Win");
+        TheOutcome.add(Lose, "Lose");   //adds Jpanel to card layout
+        TheOutcome.add(Win, "Win"); //adds Jpanel to card layout
         
         TheRuleOfSpaceWindows.getContentPane().add(cards);
         YesNo.getContentPane().add(Selection);
         OutcomeWindow.getContentPane().add(TheOutcome);
         Warning.getContentPane().add(NoMoney);
         
-        TheRuleOfSpaceWindows.setVisible(true);
-        YesNo.setVisible(false);
-        OutcomeWindow.setVisible(false);
-        Warning.setVisible(false);
+        TheRuleOfSpaceWindows.setVisible(true); //sets visibility
+        YesNo.setVisible(false);    //sets visibility
+        OutcomeWindow.setVisible(false);    //sets visibility
+        Warning.setVisible(false);  //sets visibility
         
         
         
@@ -315,7 +310,7 @@ public class TheRuleOfSpaceWindows
         {
             public void actionPerformed(ActionEvent e)
             {
-                 YesNo.setVisible(false);
+                 YesNo.setVisible(false);   //sets visibility
             }
         });
         
@@ -325,10 +320,10 @@ public class TheRuleOfSpaceWindows
             public void actionPerformed(ActionEvent e)
             {
                  boolean Outcome = Bttle(Planet);
-                 YesNo.setVisible(false);
+                 YesNo.setVisible(false);   //sets visibility
                  if (Outcome == true)
                  {
-                     OutcomeWindow.setVisible(true);
+                     OutcomeWindow.setVisible(true);    //sets visibility
                      CardLayout cardLayout = (CardLayout) TheOutcome.getLayout();
                      cardLayout.show(TheOutcome, "Win");
                      PlayerMoney = PlayerMoney + 200000;
@@ -337,7 +332,7 @@ public class TheRuleOfSpaceWindows
                  }
                  else
                  {
-                     OutcomeWindow.setVisible(true);
+                     OutcomeWindow.setVisible(true);    //sets visibility
                      CardLayout cardLayout = (CardLayout) TheOutcome.getLayout();
                      PlayerTroops = PlayerTroops/2;
                      PlayerGroundVehicles = PlayerGroundVehicles/2;
@@ -352,7 +347,7 @@ public class TheRuleOfSpaceWindows
         {
             public void actionPerformed(ActionEvent e)
             {
-                 OutcomeWindow.setVisible(false);
+                 OutcomeWindow.setVisible(false);   //sets visibility
             }
         });
         
@@ -361,7 +356,7 @@ public class TheRuleOfSpaceWindows
         {
             public void actionPerformed(ActionEvent e)
             {
-                 OutcomeWindow.setVisible(false);
+                 OutcomeWindow.setVisible(false);   //sets visibility
             }
         });
         
@@ -370,7 +365,7 @@ public class TheRuleOfSpaceWindows
         {
             public void actionPerformed(ActionEvent e)
             {
-                 Warning.setVisible(false);       
+                 Warning.setVisible(false); //sets visibility
             }
         });
         
@@ -444,14 +439,14 @@ public class TheRuleOfSpaceWindows
                 if (PlayerMoney >= 100)
                 {
                     PlayerTroops = PlayerTroops + 1;       
-                    PlayerMoney = PlayerMoney - 100;
-                    TroopsCounter.setText("Troops " + TheTroopsCounter(PlayerTroops));
-                    MoneyCounter2.setText(TheMoneyCounter2(PlayerMoney) + " Dollars");
-                    MoneyCounter.setText(TheMoneyCounter(PlayerMoney) + " Dollars");
+                    PlayerMoney = PlayerMoney - 100;    //Subtracts money
+                    TroopsCounter.setText("Troops " + TheTroopsCounter(PlayerTroops));  //changes the troops displayed
+                    MoneyCounter2.setText(TheMoneyCounter2(PlayerMoney) + " Dollars");  //changes the money displayed
+                    MoneyCounter.setText(TheMoneyCounter(PlayerMoney) + " Dollars");    //changes the money displayed
                 }
                 else
                 {
-                    Warning.setVisible(true);
+                    Warning.setVisible(true);   //sets visibility
                 }
             }
         });
@@ -464,14 +459,14 @@ public class TheRuleOfSpaceWindows
                 if (PlayerMoney >= 10000)
                 {
                     PlayerGroundVehicles = PlayerGroundVehicles + 1;       
-                    PlayerMoney = PlayerMoney - 10000;
-                    GroundVehiclesCounter.setText("Ground Vehicles " + TheGroundVehiclesCounter(PlayerGroundVehicles));
-                    MoneyCounter2.setText(TheMoneyCounter2(PlayerMoney) + " Dollars");
-                    MoneyCounter.setText(TheMoneyCounter(PlayerMoney) + " Dollars");
+                    PlayerMoney = PlayerMoney - 10000;  //Subtracts money
+                    GroundVehiclesCounter.setText("Ground Vehicles " + TheGroundVehiclesCounter(PlayerGroundVehicles)); //changes the Ground vehicles displayed
+                    MoneyCounter2.setText(TheMoneyCounter2(PlayerMoney) + " Dollars");  //changes the money displayed
+                    MoneyCounter.setText(TheMoneyCounter(PlayerMoney) + " Dollars");    //changes the money displayed
                 }
                 else
                 {
-                    Warning.setVisible(true);
+                    Warning.setVisible(true);   //sets visibility
                 }       
             }
         });
@@ -484,14 +479,14 @@ public class TheRuleOfSpaceWindows
                 if (PlayerMoney >= 30000)
                 {
                     PlayerAirVehicles = PlayerAirVehicles + 1;       
-                    PlayerMoney = PlayerMoney - 30000;
-                    AirVehiclesCounter.setText("Air Vehicles " + TheAirVehiclesCounter(PlayerAirVehicles));
-                    MoneyCounter2.setText(TheMoneyCounter2(PlayerMoney) + " Dollars");
-                    MoneyCounter.setText(TheMoneyCounter(PlayerMoney) + " Dollars");
+                    PlayerMoney = PlayerMoney - 30000;  //Subtracts money
+                    AirVehiclesCounter.setText("Air Vehicles " + TheAirVehiclesCounter(PlayerAirVehicles)); //changes the Air Vehicles displayed
+                    MoneyCounter2.setText(TheMoneyCounter2(PlayerMoney) + " Dollars");  //changes the money displayed
+                    MoneyCounter.setText(TheMoneyCounter(PlayerMoney) + " Dollars");    //changes the money displayed
                 }
                 else
                 {
-                    Warning.setVisible(true);
+                    Warning.setVisible(true);   //sets visibility
                 }            
             }
         });
@@ -503,8 +498,8 @@ public class TheRuleOfSpaceWindows
             {
                 if(PlanetOwnership[1] == false)
                 {
-                    YesNo.setVisible(true);
-                    Planet = 1;
+                    YesNo.setVisible(true); //sets visibility
+                    Planet = 1; //sets planet
                 }
                 else
                 {
@@ -519,8 +514,8 @@ public class TheRuleOfSpaceWindows
             {
                 if(PlanetOwnership[2] == false)
                 {
-                    YesNo.setVisible(true);
-                    Planet = 2;
+                    YesNo.setVisible(true); //sets visibility
+                    Planet = 2; //sets planet
                 }
                 else
                 {
@@ -535,8 +530,8 @@ public class TheRuleOfSpaceWindows
             {
                 if(PlanetOwnership[3] == false)
                 {
-                    YesNo.setVisible(true);
-                    Planet = 3;
+                    YesNo.setVisible(true); //sets visibility
+                    Planet = 3; //sets planet
                 }
                 else
                 {
@@ -551,8 +546,8 @@ public class TheRuleOfSpaceWindows
             {
                 if(PlanetOwnership[4] == false)
                 {
-                    YesNo.setVisible(true);
-                    Planet = 4;
+                    YesNo.setVisible(true); //sets visibility
+                    Planet = 4; //sets planet
                 }
                 else
                 {
@@ -567,8 +562,8 @@ public class TheRuleOfSpaceWindows
             {
                 if(PlanetOwnership[5] == false)
                 {
-                    YesNo.setVisible(true);
-                    Planet = 5;
+                    YesNo.setVisible(true); //sets visibility
+                    Planet = 5; //sets planet
                 }
                 else
                 {
@@ -583,8 +578,8 @@ public class TheRuleOfSpaceWindows
             {
                 if(PlanetOwnership[6] == false)
                 {
-                    YesNo.setVisible(true);
-                    Planet = 6;
+                    YesNo.setVisible(true); //sets visibility
+                    Planet = 6; //sets planet
                 }
                 else
                 {
@@ -741,3 +736,4 @@ public class TheRuleOfSpaceWindows
     }
 
 }
+
